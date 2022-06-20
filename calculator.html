@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript|Calculator</title>
+</head>
+<body>
+    <script>
+        /* This is a javascript program that performs the basic arithmetic operation.
+        The program takes in two values and allows the user to specify the mathematical
+       operation of choice. */
+
+       // parseInt is used  to convert the user input from a string into an integer.
+
+       const number_1 = parseInt(prompt("Kindly enter the first number :"));
+       const number_2 = parseInt(prompt("Kindly enter the second number :"));
+       let operator = prompt("Operator can be either: +, -, /, %, *  :");
+
+       // The next line of codes compares the selected operator and compares it to
+       // the conditions below
+       // if a condition is met, a basic arithmetic operator is performed on the inputs
+       // and the output is printed on the browser interface (screen)
+
+       if (operator == "+") {
+        const sum = number_1 + number_2;
+        document.write(`${number_1} + ${number_2} = ${sum}`)
+       }
+
+       else if (operator == "-") {
+        const sum = number_1 - number_2;
+        document.write(`${number_1} + ${number_2} = ${sum}`)
+       }
+       else if (operator == "*") {
+        const sum = number_1 * number_2;
+        document.write(`${number_1} x ${number_2} = ${sum}`)
+       }
+       else if (operator == "/") {
+        const sum = number_1 / number_2;
+        document.write(`${number_1} &#247; ${number_2} = ${sum}`)
+       }
+       else if (operator == "%") {
+        const sum = number_1 % number_2;
+        document.write(`${number_1} % ${number_2} = ${sum}`)
+       }
+
+       else {
+        document.write("You have entered a wrong input! kindly reload page to try again.")
+       }
+    </script>
+    
+</body>
+</html>
